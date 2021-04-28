@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-    <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTS - POPPINS LIGHTER -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS - POPPINS REGULAR -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <!-- SCRIPT -->
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
     <div id="app">
       <header>
-        <div class="container-h">
+        <div class="container-h" id="topPg">
           <div id="logoAndNav">
             <img src="img/logo-sidearea-1.png" alt="">
             <ul id="nav-h">
@@ -60,11 +63,52 @@
             </ul>
           </div>
           <div id="jumbotron">
-            <i class="fas fa-arrow-circle-left"></i>
-            <i class="fas fa-arrow-circle-right"></i>
+            <div id="prev">
+              <i class="fas fa-arrow-circle-left"></i>
+            </div>
+            <div class="slider">
+              <div id="slide-1">
+                <h1>Projects made<br>with <i><b>love</b></i></h1>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
+                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                <button type="button" name="button">READ MORE</button>
+              </div>
+              <div id="slide-2">
+                <h1>Our new folio<br>full of <i><b>joy</b></i></h1>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
+                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                <button type="button" name="button">READ MORE</button>
+              </div>
+              <div id="slide-3">
+                <h1>Deviotion that <br>never <i><b>ends</b></i></h1>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
+                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                <button type="button" name="button">READ MORE</button>
+              </div>
+            </div>
+            <div id="next">
+              <i class="fas fa-arrow-circle-right"></i>
+            </div>
+          </div>
+          <div id="points-nav">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
           </div>
         </div>
       </header>
+      <main>
+        <section id="images">
+          <img src="img/h-2-port-img-1.jpg" alt="">
+          <img src="img/h-2-port-img-2.jpg" alt="">
+          <img src="img/h-2-port-img-3.jpg" alt="">
+        </section>
+        <section id="images2">
+          <img src="img/h-2-port-img-4.jpg" alt="">
+          <img src="img/h-2-port-img-5.jpg" alt="">
+          <img src="img/h-2-port-img-6.jpg" alt="">
+        </section>
+      </main>
     </div>
   </body>
 </html>
