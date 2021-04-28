@@ -1,0 +1,54 @@
+/* REGOLE GENERALI */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-h {
+  width: 95%;
+  margin: 0 auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* ---------------------- */
+/* INTESTAZIONE DI PAGINA */
+header {
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#logoAndNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 0;
+  letter-spacing: 3px;
+  font-size: 10pt;
+  font-weight: bold;
+}
+#nav-h li {
+  display: inline-block;
+  margin: 0 24px;
+}
+#nav-h li a {
+  color: #000;
+}
+#nav-h li:hover {
+  border-bottom: 4px solid #e1c0b0;
+}
+#nav-h li:last-child:hover {
+  border-bottom: none;
+}
+#dotted{
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
