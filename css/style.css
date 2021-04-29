@@ -165,12 +165,35 @@ header {
   font-weight: lighter;
 }
 #lineProcess {
-  background: url(../img/svg/svg-3.svg);
-  text-align: center;
-  margin: 80px 0;
+  background: url(../img/svg/svg-3.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  margin: 70px auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
-#lineProcess img {
-  z-index: -1;
+.process {
+  background-color: #faf7f1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.process i {
+  font-size: 30pt;
+}
+#idea i {
+  color: #badac9;
+}
+#talk i {
+  color: #f8d12d;
+}
+#think i {
+  color: 
 }
 /* -------------------------------- */
 
