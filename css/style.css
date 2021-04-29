@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
 .container-h {
   width: 95%;
   margin: 0 auto;
@@ -23,7 +26,6 @@ a {
 header {
   display: flex;
   flex-grow: 1;
-  font-family: 'Poppins', sans-serif;
 }
 #logoAndNav {
   display: flex;
@@ -59,7 +61,6 @@ header {
 #jumbotron {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
   padding: 60px 0;
 }
 /* ACTIVE */
@@ -110,20 +111,75 @@ header {
 }
 /* ------------------- */
 /* CORPO DELLA PAGINA */
+
+/* SEZIONE 1 */
 #images {
-  padding-top: 20px;
+  margin: 30px 0;
   width: 100%;
   display: flex;
-  overflow-x: hidden;
+  flex-flow: row wrap;
 }
-#images img {
-  width: calc(100vw / 3);
+.images {
+  width: calc(100% / 3);
+  height: 590px;
 }
-#images2 {
-  width: 100%;
-  display: flex;
-  overflow-x: hidden;
+.slogan {
+  display: none;
+  position: absolute;
 }
-#images2 img {
-  width: calc(100vw / 3);
+#one {
+  background: url(../img/h-2-port-img-1.jpg) no-repeat;
+  background-size: 100%;
+}
+#two {
+  background: url(../img/h-2-port-img-2.jpg) no-repeat;
+  background-size: 100%;
+}
+#three {
+  background: url(../img/h-2-port-img-3.jpg) no-repeat;
+  background-size: 100%;
+}
+#four {
+  background: url(../img/h-2-port-img-4.jpg) no-repeat;
+  background-size: 100%;
+}
+#five {
+  background: url(../img/h-2-port-img-5.jpg) no-repeat;
+  background-size: 100%;
+}
+#six {
+  background: url(../img/h-2-port-img-6.jpg) no-repeat;
+  background-size: 100%;
+}
+/* ------------------------------ */
+
+/* SEZIONE 2 */
+#workProcess {
+  padding: 50px 0;
+}
+#workProcess h2 {
+  text-align: center;
+  font-size: 45pt;
+  font-weight: lighter;
+}
+#lineProcess {
+  text-align: center;
+  margin: 80px 0;
+}
+/* -------------------------------- */
+
+/* SEZIONE 3 */
+#withUs {
+  background-color: #faf7f1;
+  padding: 85px;
+  text-align: center;
+}
+#withUs h2 {
+  font-size: 45pt;
+  font-weight: lighter;
+}
+#withUs p {
+  margin: 30px 0;
+  color: #878787;
+  font-size: 15pt;
 }
