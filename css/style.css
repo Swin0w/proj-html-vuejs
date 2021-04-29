@@ -67,6 +67,9 @@ header {
 .active {
   display: block;
 }
+.no-active {
+  display: none;
+}
 /* --------------- */
 .fas {
   color: #e1c0b0;
@@ -97,12 +100,6 @@ header {
   padding: 20px 50px;
   font-weight: 600;
 }
-#slide-2 {
-  display: none;
-}
-#slide-3 {
-  display: none;
-}
 #points-nav{
   text-align: center;
 }
@@ -123,7 +120,7 @@ header {
   width: calc(100% / 3);
   height: 650px;
   border-collapse: collapse;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 .slogan {
   display: none;
@@ -248,6 +245,7 @@ header {
 }
 #content {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 .noticeImg {
