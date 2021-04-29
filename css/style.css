@@ -241,3 +241,84 @@ header {
   cursor: pointer;
   background-color: #e1c0b0;
 }
+/* ------------------------- */
+#notice {
+  width: 80%;
+  margin: 60px auto;
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+}
+.noticeImg {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+#newDesign {
+  background: url(../img/h-2-blog-img-1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#art {
+  background: url(../img/h-2-blog-img-2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#features {
+  background: url(../img/h-2-blog-img-3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.textAndImage {
+  width: 400px;
+  height: 300px;
+}
+.textAndImage h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  font-size: 18pt;
+}
+ p.cursive{
+  font-family: 'Lobster', cursive;
+  color: #878787;
+  margin-bottom: 30px;
+}
+.date {
+  background-color: #c0e1cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  top: -5%;
+  left: 9%;
+}
+.date p {
+  font-size: 20pt;
+  font-weight: bold;
+  margin-left: -5px;
+}
+.month {
+  text-align: center;
+  background-color: #f3d0c7;
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  top: 45px;
+  left: 9%;
+}
+/* --------------- */
+
+/* PIE' DI PAGINA */
+footer {
+  margin-top: 300px;
+  background-color: #c0e1cf;
+  display: flex;
+}
+.all {
+  align-items: center;
+}
