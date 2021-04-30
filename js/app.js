@@ -51,9 +51,11 @@ function init() {
       },
       restart: function() {
         this.timer = setInterval(this.next, 3000);
-      }
+      },
+      fade: function() {
+        fadeIn(600);
+      },
     },
-
     // Slider automatico
     mounted: function() {
       this.restart();

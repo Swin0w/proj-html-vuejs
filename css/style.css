@@ -92,7 +92,7 @@ header {
   right: 0%;
 }
 .slide-down {
-  width: 55%;
+  width: 50%;
 }
 .slide-down h1 {
   font-size: 60pt;
@@ -110,6 +110,11 @@ header {
   margin-top: 30px;
   padding: 20px 50px;
   font-weight: 600;
+}
+.slide-down button:hover {
+  cursor: pointer;
+  background-color: #e1c0b0;
+  color: white;
 }
 .slide img {
   position: absolute;
@@ -138,11 +143,22 @@ header {
 .images {
   width: calc(100% / 3);
   height: 650px;
+  position: relative;
   flex-flow: row wrap;
 }
 .slogan {
   display: none;
+  background-color: white;
+  top: 50%;
+  left: 0%;
   position: absolute;
+  width: 0px;
+}
+.images:hover > .slogan {
+  display: block;
+  width: 60%;
+  padding: 20px;
+
 }
 #one {
   background: url(../img/h-2-port-img-1.jpg) no-repeat;
@@ -255,6 +271,7 @@ header {
 #withUs button:hover {
   cursor: pointer;
   background-color: #e1c0b0;
+  color: white;
 }
 /* ------------------------- */
 #notice {
@@ -287,16 +304,18 @@ header {
   background: url(../img/h-2-blog-img-3.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+}
+#newDesign:hover{
+  transform: scale(1.1);
   transition: all 1s;
 }
-#newDesign:hover, #newDesign:focus {
+#art:hover{
   transform: scale(1.1);
+  transition: all 1s;
 }
-#art:hover, #art:focus {
+#features:hover {
   transform: scale(1.1);
-}
-#features:hover, #features:focus {
-  transform: scale(1.1);
+  transition: all 1s;
 }
 .textAndImage {
   width: 400px;
