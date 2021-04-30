@@ -21,6 +21,9 @@ li {
 a {
   text-decoration: none;
 }
+header, #jumbotron {
+  background-color: #faf7f1;
+}
 /* ---------------------- */
 /* INTESTAZIONE DI PAGINA */
 header {
@@ -100,6 +103,11 @@ header {
   padding: 20px 50px;
   font-weight: 600;
 }
+.slider img {
+  width: 50%;
+  height: 450px;
+  margin-left: 100px;
+}
 #points-nav{
   text-align: center;
 }
@@ -119,7 +127,6 @@ header {
 .images {
   width: calc(100% / 3);
   height: 650px;
-  border-collapse: collapse;
   flex-flow: row wrap;
 }
 .slogan {
@@ -315,8 +322,71 @@ header {
 footer {
   margin-top: 300px;
   background-color: #c0e1cf;
-  display: flex;
+  height: 20vh;
+  padding: 40px;
 }
 .all {
+  display: flex;
+  justify-content: space-between;
+}
+.all p, .all a {
+  font-weight: lighter;
+}
+#contacts a{
+  color: #000;
+}
+#socials ul li {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 32px;
+}
+#socials ul li a {
+  color: #000;
+}
+#arrowUp {
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
   align-items: center;
+  margin: 20px 0;
+  background-color: #e1c0b0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 5%;
+}
+#arrowUp i {
+  color: white;
+  text-align: right;
+}
+/* --------------------------------- */
+
+/* POSITIONS ABSOLUTE DIV */
+.absolute {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#qode {
+  background-color: white;
+  position: fixed;
+  top: 23%;
+  right: 0%;
+}
+#qode img {
+  width: 25px;
+  height: 25px;
+}
+#shops {
+  background-color: white;
+  position: fixed;
+  top: 28%;
+  right: 0%;
+}
+#shops img {
+  width: 25px;
+  height: 25px;
 }

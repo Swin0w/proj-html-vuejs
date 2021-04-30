@@ -1,8 +1,11 @@
 function init() {
+  console.log("Hello World");
   new Vue({
     el: '#app',
     data: {
+      // Controllo sulle slide: se attiva imposta il display: block, se disattiva display:none
       isActive: false,
+      // Indicizzazione per far capire a che slide siamo
       index: 0
     },
     methods: {
@@ -12,7 +15,7 @@ function init() {
       },
       // Slide successivo
       next: function() {
-        this.isActive == false;
+        this.isActive = false;
       }
     },
     // Slider automatico
@@ -23,7 +26,4 @@ function init() {
     }
   });
 }
-function init() {
-  initVue();
-}
-document.addEventListener('DOMContentLoader', init);
+document.addEventListener("DOMContentLoaded", init);
