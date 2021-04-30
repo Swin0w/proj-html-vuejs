@@ -275,16 +275,28 @@ header {
   background: url(../img/h-2-blog-img-1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 1s;
 }
 #art {
   background: url(../img/h-2-blog-img-2.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 1s;
 }
 #features {
   background: url(../img/h-2-blog-img-3.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  transition: all 1s;
+}
+#newDesign:hover, #newDesign:focus {
+  transform: scale(1.1);
+}
+#art:hover, #art:focus {
+  transform: scale(1.1);
+}
+#features:hover, #features:focus {
+  transform: scale(1.1);
 }
 .textAndImage {
   width: 400px;
