@@ -67,41 +67,26 @@
               </li>
             </ul>
           </div>
-          <div id="jumbotron">
-            <div id="prev" @click="prev">
+          <div id="jumbotron" @mouseover="stop" @mouseleave="restart">
+            <div id="prev" @click="prev(index)">
               <i class="fas fa-arrow-circle-left"></i>
             </div>
-            <div class="slider">
-              <div id="slide-1" v-bind:class="isActive">
-                <h1>Projects made<br>with <i><b>love</b></i></h1>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
-                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+            <div class="slide" v-for="elem in [index]">
+              <div class="slide-down">
+                <h1>{{slider[index].text}} <i><b>{{slider[index].endtext}}</b></i></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <button type="button" name="button">READ MORE</button>
               </div>
-              <img src="img/slider1.png" alt="">
-              <div v-bind:class="isActive" class="no-active">
-                <h1>Our new folio<br>full of <i><b>joy</b></i></h1>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
-                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-                <button type="button" name="button">READ MORE</button>
-              </div>
-              <img src="img/slider2.png" class="no-active"alt="">
-              <div v-bind:class="isActive" class="no-active">
-                <h1>Deviotion that <br>never <i><b>ends</b></i></h1>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br>
-                consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-                <button type="button" name="button">READ MORE</button>
-              </div>
-              <img src="img/slider3.png" class="no-active" alt="">
+            <img :src="slider[index].img" alt="">
             </div>
-            <div id="next" @click="next">
+            <div id="next" @click="next(index)">
               <i class="fas fa-arrow-circle-right"></i>
             </div>
-          </div>
-          <div id="points-nav">
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <div class="points-nav">
+              <i class="fas fa-circle"  v-for="elem in slider.length" :class="(elem - 1 == index) ? 'active' :''"></i>
+            </div>
           </div>
         </div>
       </header>
@@ -109,7 +94,7 @@
         <section id="images">
           <div class="images" id="one">
             <div class="slogan">
-
+              
             </div>
           </div>
           <div class="images" id="two">

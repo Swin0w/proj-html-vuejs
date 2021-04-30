@@ -62,64 +62,75 @@ header {
 
 /* JUMBOTRON */
 #jumbotron {
-  display: flex;
-  align-items: center;
-  padding: 60px 0;
+  padding: 60px 0 140px 0;
+  position:relative;
 }
 /* ACTIVE */
-.active {
-  display: block;
-}
-.no-active {
-  display: none;
+.points-nav > .active {
+  transform: scale(1.5);
 }
 /* --------------- */
 .fas {
   color: #e1c0b0;
   font-size: 20pt;
 }
-.slider {
-  width: 80%;
+.slide {
+  width: 85%;
   margin: 0 auto;
   display: flex;
 }
 #prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
-.slider h1 {
+#prev {
+  left: 0%;
+}
+#next {
+  right: 0%;
+}
+.slide-down {
+  width: 55%;
+}
+.slide-down h1 {
   font-size: 60pt;
   letter-spacing: 2px;
   font-weight: lighter;
 }
-.slider p {
+.slide-down p {
   padding-top: 20px;
   color: #878787;
   letter-spacing: 2px;
 }
-.slider button {
+.slide-down button {
   background-color: transparent;
   border: 4px solid #e1c0b0;
   margin-top: 30px;
   padding: 20px 50px;
   font-weight: 600;
 }
-.slider img {
-  width: 50%;
-  height: 450px;
+.slide img {
+  position: absolute;
+  width: 45%;
+  top: 8%;
+  right: 0;
   margin-left: 100px;
 }
-#points-nav{
-  text-align: center;
+.points-nav{
+  display: flex;
+  justify-content: center;
 }
-#points-nav .fa-circle{
+.points-nav .fa-circle{
   font-size: 8pt;
+  padding-right: 5px;
 }
 /* ------------------- */
 /* CORPO DELLA PAGINA */
 
 /* SEZIONE 1 */
 #images {
-  margin: 30px 0;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -328,6 +339,7 @@ footer {
 .all {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 .all p, .all a {
   font-weight: lighter;
